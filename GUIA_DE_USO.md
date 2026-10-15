@@ -1,27 +1,44 @@
-# Guia completo de uso - Cloud Project PDV
+# Manual completo ilustrado - Cloud Project PDV
 
-**Versão documentada:** 0.1.47  
+**Versão documentada:** 0.1.47
 **Revisado em:** 2026-10-15
 
-Este guia acompanha os nomes de menus da fonte 0.1.47. Recursos e permissões podem variar conforme licença, perfil e configuração do terminal. Siga as confirmações exibidas pelo sistema e confira os dados antes de salvar.
+Um manual visual para dominar o Cloud Project PDV: conheça os menus, siga cada fluxo de ponta a ponta e confira os resultados esperados antes de concluir operações.
 
-> Este manual descreve os fluxos e nomes encontrados na versão documentada. As opções podem variar conforme licença, perfil e configuração. Antes de confirmar operações que alteram dados, confira os valores apresentados na tela.
+> As capturas identificadas como Interface real mostram telas do Cloud Project PDV. Elementos transitórios do navegador foram removidos quando necessário; diagramas ilustram o fluxo e não são capturas de tela.
 
-## Visão rápida do trabalho
+## Jornada do sistema
 
-1. Prepare a conta, a licença e o banco.
-2. Cadastre produtos, pessoas, fornecedores e serviços.
-3. Registre entradas e confira os saldos de estoque.
-4. Abra o caixa quando necessário, registre vendas e acompanhe pagamentos.
-5. Consulte relatórios e mantenha backups verificados.
+Preparar → Cadastrar → Operar → Acompanhar → Proteger
 
-## Capítulos
+## Índice
 
-### 01. VISÃO GERAL - O fluxo completo de uma operação
+01. [O fluxo completo de uma operação](#capitulo-01)
+02. [Entrar e preparar o terminal](#capitulo-02)
+03. [Cadastrar produtos e pessoas](#capitulo-03)
+04. [Registrar uma compra e receber mercadorias](#capitulo-04)
+05. [Consultar e controlar o estoque](#capitulo-05)
+06. [Fazer uma venda no PDV](#capitulo-06)
+07. [Salvar uma pré-venda e acompanhar vendas](#capitulo-07)
+08. [Contas, recebimentos e caixas](#capitulo-08)
+09. [Abrir e acompanhar uma ordem de serviço](#capitulo-09)
+10. [Registrar um atendimento ao cliente](#capitulo-10)
+11. [Consultar relatórios e importar dados](#capitulo-11)
+12. [Configurar impressoras, modelos e etiquetas](#capitulo-12)
+13. [Gerenciar contas, permissões e sessões](#capitulo-13)
+14. [Acessar o sistema em outro dispositivo](#capitulo-14)
+15. [Criar backups, restaurar e mudar de computador](#capitulo-15)
+16. [Personalizar o terminal, o PDV e as telas](#capitulo-16)
+17. [Consultar a Ajuda, os termos e o registro](#capitulo-17)
+18. [Editor SQL](#capitulo-18)
+
+<a id="capitulo-01"></a>
+
+## Capítulo 01 - VISÃO GERAL - O fluxo completo de uma operação
 
 O trabalho normalmente começa no cadastro, passa pela entrada e conferência do estoque e termina na venda, no recebimento e nos relatórios. O backup protege a base ao longo do processo.
 
-**Passo a passo**
+### Passo a passo
 
 1. Cadastre a empresa, os usuários e os dados de produtos, clientes e fornecedores.
 2. Registre compras e entradas para formar o saldo; confira custos, quantidades e lotes.
@@ -32,13 +49,18 @@ O trabalho normalmente começa no cadastro, passa pela entrada e conferência do
 
 **Atenção:** Antes de operar em produção, confirme a conexão e a estrutura do banco na tela Estado do banco, revise os usuários e faça um backup verificável.
 
-![Fluxo ilustrado: O fluxo completo de uma operação](assets/help/guide-fluxo-geral.svg)
+![Área de trabalho do sistema com atalhos, contas a pagar, contas a receber e status do banco.](assets/screenshots/dashboard.png)
 
-### 02. PRIMEIRO ACESSO - Entrar e preparar o terminal
+*Captura real da Área de trabalho, com atalhos dos módulos e resumos financeiros.*
+
+
+<a id="capitulo-02"></a>
+
+## Capítulo 02 - PRIMEIRO ACESSO - Entrar e preparar o terminal
 
 O aplicativo libera as operações quando a conta, a licença, o Firebird e a estrutura do banco estão prontos.
 
-**Passo a passo**
+### Passo a passo
 
 1. Entre com a conta criada para a instalação e defina uma senha forte quando a tela solicitar.
 2. Em Registro do Sistema, confira as informações da licença e conclua o registro quando necessário.
@@ -49,13 +71,16 @@ O aplicativo libera as operações quando a conta, a licença, o Firebird e a es
 
 **Atenção:** Se aparecer Banco indisponível, Estrutura pendente, Configuração necessária ou Recuperação necessária, use a orientação dessa tela e a área Backups e restauração. Não apague nem substitua arquivos do banco manualmente.
 
-![Fluxo ilustrado: Entrar e preparar o terminal](assets/help/guide-primeiro-acesso.svg)
+![Fluxo ilustrado: Conta e senha → Licença → Firebird e schema → Empresa e perfis](assets/help/guide-primeiro-acesso.svg)
 
-### 03. CADASTROS - Cadastrar produtos e pessoas
+
+<a id="capitulo-03"></a>
+
+## Capítulo 03 - CADASTROS - Cadastrar produtos e pessoas
 
 Cadastros corretos alimentam o estoque, o PDV, as ordens de serviço e os relatórios.
 
-**Passo a passo**
+### Passo a passo
 
 1. Em Cadastros, escolha Produtos, Clientes, Fornecedores, Funcionários ou o registro necessário.
 2. No produto, digite ou leia o código de barras para consultar dados disponíveis; confira cada campo sugerido.
@@ -66,13 +91,16 @@ Cadastros corretos alimentam o estoque, o PDV, as ordens de serviço e os relat�
 
 **Atenção:** Uma consulta de código de barras não garante foto, fabricante, peso ou dimensões. Confira a origem da informação e use o preenchimento manual quando necessário.
 
-![Fluxo ilustrado: Cadastrar produtos e pessoas](assets/help/guide-cadastros.svg)
+![Fluxo ilustrado: Código ou busca → Revisar dados → Completar foto e medidas → Salvar e conferir](assets/help/guide-cadastros.svg)
 
-### 04. ESTOQUE - Registrar uma compra e receber mercadorias
+
+<a id="capitulo-04"></a>
+
+## Capítulo 04 - ESTOQUE - Registrar uma compra e receber mercadorias
 
 A compra pode ser guardada como rascunho antes de efetivar o recebimento no estoque.
 
-**Passo a passo**
+### Passo a passo
 
 1. Abra Estoque → Compras ou Nota de Entrada e inicie uma compra.
 2. Informe o fornecedor, a data e a identificação do documento; adicione os produtos e quantidades.
@@ -83,13 +111,16 @@ A compra pode ser guardada como rascunho antes de efetivar o recebimento no esto
 
 **Atenção:** Receber e lançar estoque altera saldos. Confira fornecedor, itens, quantidades e documento antes de confirmar para evitar duplicidade de entrada.
 
-![Fluxo ilustrado: Registrar uma compra e receber mercadorias](assets/help/guide-compras.svg)
+![Fluxo ilustrado: Fornecedor e documento → Itens e quantidades → Conferir totais → Receber no estoque](assets/help/guide-compras.svg)
 
-### 05. ESTOQUE - Consultar e controlar o estoque
+
+<a id="capitulo-05"></a>
+
+## Capítulo 05 - ESTOQUE - Consultar e controlar o estoque
 
 Use as consultas e os registros de movimentação para entender saldo, custo, lotes e itens que precisam de atenção.
 
-**Passo a passo**
+### Passo a passo
 
 1. Use Estoque → Gerenciar Estoque ou Consultar Preços para localizar um produto.
 2. Registre notas de saída sem venda ou ajustes apenas com quantidade, motivo e referência conferidos.
@@ -100,13 +131,16 @@ Use as consultas e os registros de movimentação para entender saldo, custo, lo
 
 **Atenção:** Ajustes e saídas podem reduzir ou aumentar o saldo. Confirme o item e o motivo antes de salvar; não use Nota de Saída [Sem Venda] para registrar uma venda comum.
 
-![Fluxo ilustrado: Consultar e controlar o estoque](assets/help/guide-controle-estoque.svg)
+![Fluxo ilustrado: Localizar produto → Conferir saldo e lote → Registrar movimentação → Revisar inventário](assets/help/guide-controle-estoque.svg)
 
-### 06. VENDAS - Fazer uma venda no PDV
+
+<a id="capitulo-06"></a>
+
+## Capítulo 06 - VENDAS - Fazer uma venda no PDV
 
 O PDV localiza cada produto, mostra uma prévia breve e reúne os itens no carrinho antes do pagamento.
 
-**Passo a passo**
+### Passo a passo
 
 1. Abra Vendas → Vender (PDV) e confira o status do caixa.
 2. Leia o código de barras ou pesquise o item; confira descrição, preço e a imagem cadastrada quando disponível.
@@ -117,13 +151,18 @@ O PDV localiza cada produto, mostra uma prévia breve e reúne os itens no carri
 
 **Atenção:** Atalhos exibidos na tela: F1 finalizar venda, F2 cancelar venda, F3 cancelar item, F4 sugerir quantidade e F5 pré-venda. Confira o item antes de concluir; o comprovante não fiscal não substitui documento fiscal.
 
-![Fluxo ilustrado: Fazer uma venda no PDV](assets/help/guide-pdv-venda.svg)
+![Tela do ponto de venda com campo para leitura, produtos da venda e ações laterais.](assets/screenshots/pdv.png)
 
-### 07. VENDAS - Salvar uma pré-venda e acompanhar vendas
+*Captura real do PDV: leitor de produtos, área da venda e comandos do caixa.*
+
+
+<a id="capitulo-07"></a>
+
+## Capítulo 07 - VENDAS - Salvar uma pré-venda e acompanhar vendas
 
 A pré-venda guarda itens e preços para retomar no PDV. O acompanhamento de vendas, cancelamentos, devoluções e entregas fica nos módulos de vendas.
 
-**Passo a passo**
+### Passo a passo
 
 1. Monte os itens no PDV e confira descrição, quantidade e preço.
 2. Use Pré-venda (F5), informe a validade e uma observação se necessário, e salve.
@@ -134,13 +173,18 @@ A pré-venda guarda itens e preços para retomar no PDV. O acompanhamento de ven
 
 **Atenção:** Salvar pré-venda não movimenta estoque, caixa ou contas. Cancelamento de venda e devolução são operações diferentes; leia o resumo e confirme os itens e valores corretos.
 
-![Fluxo ilustrado: Salvar uma pré-venda e acompanhar vendas](assets/help/guide-orcamentos-vendas.svg)
+![Tela do PDV com a opção Pré-venda e controles para a operação.](assets/screenshots/pdv.png)
 
-### 08. FINANCEIRO - Contas, recebimentos e caixas
+*No PDV real, o comando Pré-venda fica junto às ações do caixa.*
+
+
+<a id="capitulo-08"></a>
+
+## Capítulo 08 - FINANCEIRO - Contas, recebimentos e caixas
 
 O financeiro reúne compromissos e recebimentos. Caixa do Dia acompanha o turno de operação; Caixa da Empresa mantém um fluxo próprio de lançamentos.
 
-**Passo a passo**
+### Passo a passo
 
 1. Use Contas a Pagar e Contas a Receber para consultar ou lançar compromissos e parcelas.
 2. No Caixa do Dia, abra o caixa com o valor inicial, registre movimentações e confira o fechamento do turno.
@@ -151,13 +195,18 @@ O financeiro reúne compromissos e recebimentos. Caixa do Dia acompanha o turno 
 
 **Atenção:** Caixa do Dia e Caixa da Empresa são áreas distintas. O livro da Caixa da Empresa não é sincronizado automaticamente com vendas, contas a pagar/receber ou adquirentes; confira os registros antes de usar como conciliação.
 
-![Fluxo ilustrado: Contas, recebimentos e caixas](assets/help/guide-financeiro-caixa.svg)
+![Área de trabalho com os cartões de contas a pagar e contas a receber.](assets/screenshots/dashboard.png)
 
-### 09. ORDEM DE SERVIÇO - Abrir e acompanhar uma ordem de serviço
+*A tela inicial real reúne os resumos de contas a pagar e a receber.*
+
+
+<a id="capitulo-09"></a>
+
+## Capítulo 09 - ORDEM DE SERVIÇO - Abrir e acompanhar uma ordem de serviço
 
 Use a OS para registrar o atendimento técnico, serviços e itens relacionados ao equipamento ou produto do cliente.
 
-**Passo a passo**
+### Passo a passo
 
 1. Abra Ordem de Serviço → Nova Ordem de Serviço e localize ou cadastre o cliente.
 2. Descreva o equipamento, o problema informado e os serviços/itens necessários.
@@ -168,13 +217,16 @@ Use a OS para registrar o atendimento técnico, serviços e itens relacionados a
 
 **Atenção:** Confirme cliente, descrição e serviços antes de salvar. Um modelo de garantia só deve ser entregue depois de conferir seus dados e o prazo aplicável.
 
-![Fluxo ilustrado: Abrir e acompanhar uma ordem de serviço](assets/help/guide-ordem-servico.svg)
+![Fluxo ilustrado: Cliente e equipamento → Descrição do serviço → Salvar a OS → Acompanhar e encerrar](assets/help/guide-ordem-servico.svg)
 
-### 10. UTILITÁRIOS - Registrar um atendimento ao cliente
+
+<a id="capitulo-10"></a>
+
+## Capítulo 10 - UTILITÁRIOS - Registrar um atendimento ao cliente
 
 O módulo de Atendimento ao Cliente organiza solicitações e seu acompanhamento, separado da Ordem de Serviço.
 
-**Passo a passo**
+### Passo a passo
 
 1. Em Utilitários → Atendimento ao Cliente, escolha Iniciar Novo Atendimento.
 2. Localize o cliente e informe o responsável e a descrição necessária.
@@ -185,13 +237,16 @@ O módulo de Atendimento ao Cliente organiza solicitações e seu acompanhamento
 
 **Atenção:** Registre apenas dados necessários ao atendimento e evite incluir senhas, dados de cartão ou outras informações secretas na descrição.
 
-![Fluxo ilustrado: Registrar um atendimento ao cliente](assets/help/guide-atendimento-cliente.svg)
+![Fluxo ilustrado: Identificar cliente → Descrever solicitação → Salvar atendimento → Acompanhar situação](assets/help/guide-atendimento-cliente.svg)
 
-### 11. RELATÓRIOS E UTILITÁRIOS - Consultar relatórios e importar dados
+
+<a id="capitulo-11"></a>
+
+## Capítulo 11 - RELATÓRIOS E UTILITÁRIOS - Consultar relatórios e importar dados
 
 Relatórios resumem cadastros, vendas e estoque. Importações devem ser conferidas antes de gravar dados.
 
-**Passo a passo**
+### Passo a passo
 
 1. Abra Relatórios e escolha o assunto, como clientes, produtos, preços, promoções, estoque crítico ou inventário.
 2. Informe o período ou os filtros disponíveis e confira a prévia antes de imprimir.
@@ -202,13 +257,16 @@ Relatórios resumem cadastros, vendas e estoque. Importações devem ser conferi
 
 **Atenção:** Importar pode criar ou alterar cadastros. Faça um backup, valide o arquivo e revise duplicidades e campos antes de confirmar.
 
-![Fluxo ilustrado: Consultar relatórios e importar dados](assets/help/guide-relatorios-importacao.svg)
+![Fluxo ilustrado: Escolher relatório ou arquivo → Definir filtro → Conferir prévia → Imprimir ou concluir](assets/help/guide-relatorios-importacao.svg)
 
-### 12. IMPRESSÃO - Configurar impressoras, modelos e etiquetas
+
+<a id="capitulo-12"></a>
+
+## Capítulo 12 - IMPRESSÃO - Configurar impressoras, modelos e etiquetas
 
 O módulo oferece prévias para documentos A4 e comprovantes térmicos. A logo cadastrada da empresa pode compor os modelos compatíveis.
 
-**Passo a passo**
+### Passo a passo
 
 1. Abra Configurações → Configurações Gerais → Impressão e confira as filas listadas pelo Windows.
 2. Escolha papel, fila e modelo; os modelos térmicos incluem cinco opções: 80 mm Tipos 1, 2 e 3; 58 mm Tipos 1 e 2.
@@ -219,13 +277,18 @@ O módulo oferece prévias para documentos A4 e comprovantes térmicos. A logo c
 
 **Atenção:** A prévia ou a impressão de calibração abre o diálogo do navegador e não prova o resultado físico. Confira driver, papel, margens, escala e alinhamento; modelos térmicos são comprovantes não fiscais.
 
-![Fluxo ilustrado: Configurar impressoras, modelos e etiquetas](assets/help/guide-impressao-etiquetas.svg)
+![Tela de Impressão com as colunas de impressoras comuns, recibos e impressora térmica.](assets/screenshots/printing.png)
 
-### 13. USUÁRIOS E SEGURANÇA - Gerenciar contas, permissões e sessões
+*Captura real das configurações de impressão e dos modelos de impressora.*
+
+
+<a id="capitulo-13"></a>
+
+## Capítulo 13 - USUÁRIOS E SEGURANÇA - Gerenciar contas, permissões e sessões
 
 Contas individuais permitem controlar acessos e entender quem realizou as ações registradas.
 
-**Passo a passo**
+### Passo a passo
 
 1. Em Usuários → Cadastro de Usuários, crie uma conta individual e escolha o perfil adequado.
 2. Use Perfil do Usuário e as permissões do terminal para limitar operações conforme a função.
@@ -236,13 +299,16 @@ Contas individuais permitem controlar acessos e entender quem realizou as açõe
 
 **Atenção:** Não compartilhe contas administrativas. Encerre sessões somente depois de conferir conta e dispositivo. Ative MFA para as contas administrativas antes de habilitar acesso externo.
 
-![Fluxo ilustrado: Gerenciar contas, permissões e sessões](assets/help/guide-usuarios-seguranca.svg)
+![Fluxo ilustrado: Criar conta individual → Definir perfil → Entrar e operar → Revisar sessões e histórico](assets/help/guide-usuarios-seguranca.svg)
 
-### 14. REDE E ACESSO MÓVEL - Acessar o sistema em outro dispositivo
+
+<a id="capitulo-14"></a>
+
+## Capítulo 14 - REDE E ACESSO MÓVEL - Acessar o sistema em outro dispositivo
 
 Configurações de Rede controla o modo de acesso, o endereço e a proteção da conexão. A opção local só atende este computador.
 
-**Passo a passo**
+### Passo a passo
 
 1. Abra Configurações → Configurações de Rede e escolha o modo compatível com a instalação.
 2. Para acesso por celular, prepare HTTPS ou a VPN privada recomendada e confira o estado dos certificados.
@@ -253,13 +319,16 @@ Configurações de Rede controla o modo de acesso, o endereço e a proteção da
 
 **Atenção:** O acesso público permanece desligado por padrão. Ative senha forte e MFA nas contas administrativas antes de disponibilizar acesso externo. Se a pasta protegida de certificados não estiver preparada, siga a instalação administrativa fornecida para o terminal.
 
-![Fluxo ilustrado: Acessar o sistema em outro dispositivo](assets/help/guide-rede-celular.svg)
+![Fluxo ilustrado: Escolher modo → Preparar HTTPS ou VPN → Ler QR Code → Autenticar no celular](assets/help/guide-rede-celular.svg)
 
-### 15. CÓPIA DE SEGURANÇA - Criar backups, restaurar e mudar de computador
+
+<a id="capitulo-15"></a>
+
+## Capítulo 15 - CÓPIA DE SEGURANÇA - Criar backups, restaurar e mudar de computador
 
 Backups protegem o banco e permitem recuperar ou transferir a operação. Guarde o arquivo e a senha em locais protegidos.
 
-**Passo a passo**
+### Passo a passo
 
 1. Abra Cópia de Segurança → Fazer Backup ou Backups e restauração e crie uma cópia criptografada.
 2. Configure Backup Automático quando necessário e confira o horário e o status apresentados.
@@ -270,13 +339,16 @@ Backups protegem o banco e permitem recuperar ou transferir a operação. Guarde
 
 **Atenção:** Restaurar substitui o estado atual pelo conteúdo escolhido. Não feche o programa durante a restauração. Se surgir Recuperação necessária, abra Backups e restauração e siga a ação de recuperação indicada; peça apoio se o estado não estiver claro.
 
-![Fluxo ilustrado: Criar backups, restaurar e mudar de computador](assets/help/guide-backups-recuperacao.svg)
+![Fluxo ilustrado: Criar cópia → Verificar e guardar → Escolher recuperação → Validar banco](assets/help/guide-backups-recuperacao.svg)
 
-### 16. CONFIGURAÇÕES - Personalizar o terminal, o PDV e as telas
+
+<a id="capitulo-16"></a>
+
+## Capítulo 16 - CONFIGURAÇÕES - Personalizar o terminal, o PDV e as telas
 
 As configurações ajustam aparência, comportamento do PDV, terminal de preços, imagens e mensagens rotativas.
 
-**Passo a passo**
+### Passo a passo
 
 1. Em Configurações Gerais, revise dados da empresa, identidade visual, impressões e preferências do terminal.
 2. Em Configurações P.D.V, ajuste o comportamento e os conteúdos usados durante a venda.
@@ -287,13 +359,16 @@ As configurações ajustam aparência, comportamento do PDV, terminal de preços
 
 **Atenção:** Teste imagens em uma resolução adequada e confirme legibilidade e proporção na tela de destino. Uma alteração salva pode exigir atualizar a tela do PDV ou do terminal para aparecer.
 
-![Fluxo ilustrado: Personalizar o terminal, o PDV e as telas](assets/help/guide-configuracoes-terminal.svg)
+![Fluxo ilustrado: Abrir a configuração → Ajustar conteúdo → Salvar → Conferir no terminal](assets/help/guide-configuracoes-terminal.svg)
 
-### 17. AJUDA E LICENÇA - Consultar a Ajuda, os termos e o registro
+
+<a id="capitulo-17"></a>
+
+## Capítulo 17 - AJUDA E LICENÇA - Consultar a Ajuda, os termos e o registro
 
 Use Ajuda para conhecer a versão e consultar orientações. O Registro do Sistema reúne informações e ativação da licença.
 
-**Passo a passo**
+### Passo a passo
 
 1. Abra Ajuda → Guia de Uso para pesquisar por módulo ou palavra-chave.
 2. Consulte Sobre para identificar o produto e Termos e Condições de Uso para abrir as informações disponíveis.
@@ -304,15 +379,18 @@ Use Ajuda para conhecer a versão e consultar orientações. O Registro do Siste
 
 **Atenção:** O guia não substitui o contrato comercial fornecido com a licença. Não compartilhe códigos de ativação, senhas ou arquivos de certificado em canais públicos.
 
-![Fluxo ilustrado: Consultar a Ajuda, os termos e o registro](assets/help/guide-ajuda-registro.svg)
+![Menu Ajuda do Cloud Project PDV aberto com as opções Sobre e Termos e Condições de Uso.](assets/screenshots/help-menu.png)
 
-### 18. UTILITÁRIOS · STATUS - Editor SQL
+*Captura real do menu Ajuda com os atalhos Sobre e Termos e Condições de Uso.*
 
-**Status: EM IMPLANTAÇÃO**
+
+<a id="capitulo-18"></a>
+
+## Capítulo 18 - UTILITÁRIOS · STATUS - Editor SQL
 
 Este módulo ainda está em implantação e não deve ser tratado como ferramenta disponível para operação.
 
-**Passo a passo**
+### Passo a passo
 
 1. Não execute comandos SQL por esse módulo enquanto ele estiver identificado como Em implantação.
 2. Para corrigir dados, use os módulos próprios do sistema ou abra um atendimento com o suporte.
@@ -323,16 +401,12 @@ Este módulo ainda está em implantação e não deve ser tratado como ferrament
 
 **Atenção:** Alterações manuais no banco podem danificar dados, licença, histórico e integridade. Não edite o banco diretamente.
 
-![Fluxo ilustrado: Editor SQL](assets/help/guide-editor-sql.svg)
+**Status:** EM IMPLANTAÇÃO
 
-## Cuidados antes de operar
+![Fluxo ilustrado: Em implantação → Uso não liberado → Solicitar suporte → Aguardar documentação](assets/help/guide-editor-sql.svg)
 
-- Faça um backup antes de importações, restaurações e mudanças que afetem muitos registros.
-- Não compartilhe senhas, códigos de licença, chaves MFA ou arquivos de certificado.
-- Comprovantes térmicos descritos neste sistema são não fiscais; siga as obrigações fiscais aplicáveis ao negócio.
-- Se a tela indicar banco indisponível ou recuperação necessária, siga o fluxo de recuperação e procure o suporte quando houver dúvida.
-- O Editor SQL está em implantação e ainda não deve ser usado para operar ou alterar o banco.
+## Observações de versão
 
-## Ajuda e suporte
+Este manual descreve a versão 0.1.47. Menus e recursos podem variar conforme licença, permissões e configuração do terminal. O Editor SQL está em implantação.
 
-Abra Ajuda → Guia de Uso dentro do sistema. Para termos comerciais, consulte o contrato fornecido com a licença.
+Faça backups verificáveis e não compartilhe senhas, códigos de ativação ou arquivos de certificado.

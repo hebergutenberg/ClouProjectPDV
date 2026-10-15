@@ -1,0 +1,580 @@
+{
+  "product": "Cloud Project PDV",
+  "version": "0.1.47",
+  "updatedAt": "2026-10-15",
+  "intro": "Um manual visual para dominar o Cloud Project PDV: conheça os menus, siga cada fluxo de ponta a ponta e confira os resultados esperados antes de concluir operações.",
+  "chapters": [
+    {
+      "id": "fluxo-geral",
+      "section": "VISÃO GERAL",
+      "title": "O fluxo completo de uma operação",
+      "intro": "O trabalho normalmente começa no cadastro, passa pela entrada e conferência do estoque e termina na venda, no recebimento e nos relatórios. O backup protege a base ao longo do processo.",
+      "steps": [
+        "Cadastre a empresa, os usuários e os dados de produtos, clientes e fornecedores.",
+        "Registre compras e entradas para formar o saldo; confira custos, quantidades e lotes.",
+        "Abra o caixa quando a operação exigir e registre a venda pelo PDV.",
+        "Acompanhe vendas, pagamentos, estoque e relatórios; mantenha cópias de segurança recentes."
+      ],
+      "result": "Cada etapa fica no módulo correspondente e pode depender de permissões e configurações do terminal.",
+      "attention": "Antes de operar em produção, confirme a conexão e a estrutura do banco na tela Estado do banco, revise os usuários e faça um backup verificável.",
+      "diagram": [
+        "Cadastros",
+        "Entrada e estoque",
+        "PDV e caixa",
+        "Relatórios e backup"
+      ],
+      "terms": [
+        "fluxo completo",
+        "rotina",
+        "operação",
+        "começar",
+        "visão geral",
+        "processo"
+      ],
+      "screenshot": "assets/screenshots/dashboard.png",
+      "screenshotCaption": "Captura real da Área de trabalho, com atalhos dos módulos e resumos financeiros.",
+      "screenshotAlt": "Área de trabalho do sistema com atalhos, contas a pagar, contas a receber e status do banco."
+    },
+    {
+      "id": "primeiro-acesso",
+      "section": "PRIMEIRO ACESSO",
+      "title": "Entrar e preparar o terminal",
+      "intro": "O aplicativo libera as operações quando a conta, a licença, o Firebird e a estrutura do banco estão prontos.",
+      "steps": [
+        "Entre com a conta criada para a instalação e defina uma senha forte quando a tela solicitar.",
+        "Em Registro do Sistema, confira as informações da licença e conclua o registro quando necessário.",
+        "Na tela Estado do banco, use Verificar novamente e confira conexão, servidor e versão do schema.",
+        "Quando o banco estiver pronto, cadastre ou revise a empresa, as contas de usuário e as permissões."
+      ],
+      "result": "A tela de login leva ao sistema quando a autenticação e o estado do banco permitem operar.",
+      "attention": "Se aparecer Banco indisponível, Estrutura pendente, Configuração necessária ou Recuperação necessária, use a orientação dessa tela e a área Backups e restauração. Não apague nem substitua arquivos do banco manualmente.",
+      "diagram": [
+        "Conta e senha",
+        "Licença",
+        "Firebird e schema",
+        "Empresa e perfis"
+      ],
+      "terms": [
+        "login",
+        "senha",
+        "licença",
+        "banco de dados",
+        "firebird",
+        "schema",
+        "recuperação",
+        "primeiro acesso"
+      ]
+    },
+    {
+      "id": "cadastros",
+      "section": "CADASTROS",
+      "title": "Cadastrar produtos e pessoas",
+      "intro": "Cadastros corretos alimentam o estoque, o PDV, as ordens de serviço e os relatórios.",
+      "steps": [
+        "Em Cadastros, escolha Produtos, Clientes, Fornecedores, Funcionários ou o registro necessário.",
+        "No produto, digite ou leia o código de barras para consultar dados disponíveis; confira cada campo sugerido.",
+        "Revise descrição, fabricante, unidade, preços, saldo inicial, pesos bruto e líquido e dimensões; complete o que faltar.",
+        "Inclua uma imagem que você tenha direito de usar, salve e localize o registro para conferir o resultado."
+      ],
+      "result": "Produtos de Grade servem para organizar variações; setores, marcas, unidades e localizações ajudam a classificar os itens.",
+      "attention": "Uma consulta de código de barras não garante foto, fabricante, peso ou dimensões. Confira a origem da informação e use o preenchimento manual quando necessário.",
+      "diagram": [
+        "Código ou busca",
+        "Revisar dados",
+        "Completar foto e medidas",
+        "Salvar e conferir"
+      ],
+      "terms": [
+        "cadastros",
+        "produto",
+        "código de barras",
+        "imagem",
+        "foto",
+        "fabricante",
+        "marca",
+        "peso",
+        "dimensões",
+        "cliente",
+        "fornecedor",
+        "funcionário",
+        "grade"
+      ]
+    },
+    {
+      "id": "compras",
+      "section": "ESTOQUE",
+      "title": "Registrar uma compra e receber mercadorias",
+      "intro": "A compra pode ser guardada como rascunho antes de efetivar o recebimento no estoque.",
+      "steps": [
+        "Abra Estoque → Compras ou Nota de Entrada e inicie uma compra.",
+        "Informe o fornecedor, a data e a identificação do documento; adicione os produtos e quantidades.",
+        "Confira custos, totais e linhas. Use Salvar rascunho se ainda estiver conferindo.",
+        "Quando os dados estiverem corretos, use Receber e lançar estoque e confira a listagem de entrada."
+      ],
+      "result": "A listagem de compras e entradas ajuda a localizar o documento e acompanhar seu estado.",
+      "attention": "Receber e lançar estoque altera saldos. Confira fornecedor, itens, quantidades e documento antes de confirmar para evitar duplicidade de entrada.",
+      "diagram": [
+        "Fornecedor e documento",
+        "Itens e quantidades",
+        "Conferir totais",
+        "Receber no estoque"
+      ],
+      "terms": [
+        "compra",
+        "compras",
+        "entrada",
+        "mercadoria",
+        "fornecedor",
+        "receber",
+        "estoque",
+        "rascunho"
+      ]
+    },
+    {
+      "id": "controle-estoque",
+      "section": "ESTOQUE",
+      "title": "Consultar e controlar o estoque",
+      "intro": "Use as consultas e os registros de movimentação para entender saldo, custo, lotes e itens que precisam de atenção.",
+      "steps": [
+        "Use Estoque → Gerenciar Estoque ou Consultar Preços para localizar um produto.",
+        "Registre notas de saída sem venda ou ajustes apenas com quantidade, motivo e referência conferidos.",
+        "Quando aplicável, controle lotes, validade e certificado de garantia no registro correspondente.",
+        "Use Inventário, Estoque Crítico e Patrimônio em Estoque para revisar diferenças e itens importantes."
+      ],
+      "result": "Tabela de Preços e os relatórios de produtos ajudam a revisar preço de varejo, atacado e promoções.",
+      "attention": "Ajustes e saídas podem reduzir ou aumentar o saldo. Confirme o item e o motivo antes de salvar; não use Nota de Saída [Sem Venda] para registrar uma venda comum.",
+      "diagram": [
+        "Localizar produto",
+        "Conferir saldo e lote",
+        "Registrar movimentação",
+        "Revisar inventário"
+      ],
+      "terms": [
+        "estoque",
+        "saldo",
+        "ajuste",
+        "saída",
+        "lote",
+        "validade",
+        "garantia",
+        "inventário",
+        "preço",
+        "promoção"
+      ]
+    },
+    {
+      "id": "pdv-venda",
+      "section": "VENDAS",
+      "title": "Fazer uma venda no PDV",
+      "intro": "O PDV localiza cada produto, mostra uma prévia breve e reúne os itens no carrinho antes do pagamento.",
+      "steps": [
+        "Abra Vendas → Vender (PDV) e confira o status do caixa.",
+        "Leia o código de barras ou pesquise o item; confira descrição, preço e a imagem cadastrada quando disponível.",
+        "Revise os itens e quantidades no carrinho. Se necessário, selecione o cliente, aplique desconto autorizado ou corrija o item.",
+        "Informe forma e valor de pagamento, confira o total e finalize a venda; depois revise o comprovante oferecido."
+      ],
+      "result": "No layout do PDV, a área Produtos desta venda reúne os itens adicionados; a prévia ajuda a confirmar o produto localizado.",
+      "attention": "Atalhos exibidos na tela: F1 finalizar venda, F2 cancelar venda, F3 cancelar item, F4 sugerir quantidade e F5 pré-venda. Confira o item antes de concluir; o comprovante não fiscal não substitui documento fiscal.",
+      "diagram": [
+        "Ler ou pesquisar",
+        "Prévia do produto",
+        "Conferir carrinho",
+        "Pagamento e conclusão"
+      ],
+      "terms": [
+        "pdv",
+        "venda",
+        "carrinho",
+        "barcode",
+        "código de barras",
+        "prévia",
+        "imagem produto",
+        "pagamento",
+        "caixa",
+        "finalizar"
+      ],
+      "screenshot": "assets/screenshots/pdv.png",
+      "screenshotCaption": "Captura real do PDV: leitor de produtos, área da venda e comandos do caixa.",
+      "screenshotAlt": "Tela do ponto de venda com campo para leitura, produtos da venda e ações laterais."
+    },
+    {
+      "id": "orcamentos-vendas",
+      "section": "VENDAS",
+      "title": "Salvar uma pré-venda e acompanhar vendas",
+      "intro": "A pré-venda guarda itens e preços para retomar no PDV. O acompanhamento de vendas, cancelamentos, devoluções e entregas fica nos módulos de vendas.",
+      "steps": [
+        "Monte os itens no PDV e confira descrição, quantidade e preço.",
+        "Use Pré-venda (F5), informe a validade e uma observação se necessário, e salve.",
+        "Para consultar operações, abra Gerenciamento de Vendas, Listagem de Vendas ou Orçamentos.",
+        "Para devoluções e entregas, abra as listas correspondentes, localize o registro e confira as opções exibidas antes de confirmar."
+      ],
+      "result": "Uma pré-venda salva pode ser retomada no PDV para continuar a operação.",
+      "attention": "Salvar pré-venda não movimenta estoque, caixa ou contas. Cancelamento de venda e devolução são operações diferentes; leia o resumo e confirme os itens e valores corretos.",
+      "diagram": [
+        "Montar itens",
+        "Salvar pré-venda",
+        "Retomar ou localizar",
+        "Acompanhar venda"
+      ],
+      "terms": [
+        "orçamento",
+        "pré-venda",
+        "f5",
+        "gerenciamento de vendas",
+        "cancelar",
+        "devolução",
+        "entrega",
+        "acompanhar venda"
+      ],
+      "screenshot": "assets/screenshots/pdv.png",
+      "screenshotCaption": "No PDV real, o comando Pré-venda fica junto às ações do caixa.",
+      "screenshotAlt": "Tela do PDV com a opção Pré-venda e controles para a operação."
+    },
+    {
+      "id": "financeiro-caixa",
+      "section": "FINANCEIRO",
+      "title": "Contas, recebimentos e caixas",
+      "intro": "O financeiro reúne compromissos e recebimentos. Caixa do Dia acompanha o turno de operação; Caixa da Empresa mantém um fluxo próprio de lançamentos.",
+      "steps": [
+        "Use Contas a Pagar e Contas a Receber para consultar ou lançar compromissos e parcelas.",
+        "No Caixa do Dia, abra o caixa com o valor inicial, registre movimentações e confira o fechamento do turno.",
+        "Consulte Contas Pagas, Parcelas Apagadas, Recebimentos e Taxas de Cartões quando precisar localizar esses registros.",
+        "Em Caixa da Empresa, confira o fluxo e registre lançamentos próprios conforme a rotina financeira da empresa."
+      ],
+      "result": "As telas de resumo ajudam a identificar vencimentos, recebimentos e movimentações do período.",
+      "attention": "Caixa do Dia e Caixa da Empresa são áreas distintas. O livro da Caixa da Empresa não é sincronizado automaticamente com vendas, contas a pagar/receber ou adquirentes; confira os registros antes de usar como conciliação.",
+      "diagram": [
+        "Contas a pagar e receber",
+        "Abrir caixa do dia",
+        "Movimentar e receber",
+        "Conferir e fechar"
+      ],
+      "terms": [
+        "financeiro",
+        "contas a pagar",
+        "contas a receber",
+        "caixa",
+        "caixa do dia",
+        "caixa da empresa",
+        "recebimentos",
+        "parcelas",
+        "cartão",
+        "taxas"
+      ],
+      "screenshot": "assets/screenshots/dashboard.png",
+      "screenshotCaption": "A tela inicial real reúne os resumos de contas a pagar e a receber.",
+      "screenshotAlt": "Área de trabalho com os cartões de contas a pagar e contas a receber."
+    },
+    {
+      "id": "ordem-servico",
+      "section": "ORDEM DE SERVIÇO",
+      "title": "Abrir e acompanhar uma ordem de serviço",
+      "intro": "Use a OS para registrar o atendimento técnico, serviços e itens relacionados ao equipamento ou produto do cliente.",
+      "steps": [
+        "Abra Ordem de Serviço → Nova Ordem de Serviço e localize ou cadastre o cliente.",
+        "Descreva o equipamento, o problema informado e os serviços/itens necessários.",
+        "Confira os dados e salve a ordem; use Gerenciar Ordens de Serviços para localizá-la depois.",
+        "Atualize o andamento e as observações na própria OS; consulte os modelos de garantia disponíveis."
+      ],
+      "result": "A listagem e o detalhe da OS ajudam a acompanhar histórico, situação e dados de atendimento.",
+      "attention": "Confirme cliente, descrição e serviços antes de salvar. Um modelo de garantia só deve ser entregue depois de conferir seus dados e o prazo aplicável.",
+      "diagram": [
+        "Cliente e equipamento",
+        "Descrição do serviço",
+        "Salvar a OS",
+        "Acompanhar e encerrar"
+      ],
+      "terms": [
+        "ordem de serviço",
+        "os",
+        "serviço",
+        "garantia",
+        "técnico",
+        "cliente",
+        "equipamento"
+      ]
+    },
+    {
+      "id": "atendimento-cliente",
+      "section": "UTILITÁRIOS",
+      "title": "Registrar um atendimento ao cliente",
+      "intro": "O módulo de Atendimento ao Cliente organiza solicitações e seu acompanhamento, separado da Ordem de Serviço.",
+      "steps": [
+        "Em Utilitários → Atendimento ao Cliente, escolha Iniciar Novo Atendimento.",
+        "Localize o cliente e informe o responsável e a descrição necessária.",
+        "Revise e salve o registro; acompanhe a solicitação na Grade de Atendimentos.",
+        "Use os filtros Todos, Abertos ou Fechados e consulte o detalhe antes de alterar o estado."
+      ],
+      "result": "A grade mantém os atendimentos localizáveis e permite consultar o andamento conforme o perfil.",
+      "attention": "Registre apenas dados necessários ao atendimento e evite incluir senhas, dados de cartão ou outras informações secretas na descrição.",
+      "diagram": [
+        "Identificar cliente",
+        "Descrever solicitação",
+        "Salvar atendimento",
+        "Acompanhar situação"
+      ],
+      "terms": [
+        "atendimento",
+        "suporte",
+        "solicitação",
+        "cliente",
+        "aberto",
+        "fechado",
+        "grade de atendimentos"
+      ]
+    },
+    {
+      "id": "relatorios-importacao",
+      "section": "RELATÓRIOS E UTILITÁRIOS",
+      "title": "Consultar relatórios e importar dados",
+      "intro": "Relatórios resumem cadastros, vendas e estoque. Importações devem ser conferidas antes de gravar dados.",
+      "steps": [
+        "Abra Relatórios e escolha o assunto, como clientes, produtos, preços, promoções, estoque crítico ou inventário.",
+        "Informe o período ou os filtros disponíveis e confira a prévia antes de imprimir.",
+        "Para dados de produtos, use Utilitários → Importações / Exportações e selecione XML ou Excel.",
+        "Confira o arquivo, a prévia e o histórico de importação; use a exportação correspondente quando precisar gerar um arquivo."
+      ],
+      "result": "A prévia ajuda a validar seleção, filtros e registros antes de imprimir ou importar.",
+      "attention": "Importar pode criar ou alterar cadastros. Faça um backup, valide o arquivo e revise duplicidades e campos antes de confirmar.",
+      "diagram": [
+        "Escolher relatório ou arquivo",
+        "Definir filtro",
+        "Conferir prévia",
+        "Imprimir ou concluir"
+      ],
+      "terms": [
+        "relatório",
+        "importar",
+        "exportar",
+        "xml",
+        "excel",
+        "filtros",
+        "inventário",
+        "estoque crítico",
+        "produtos"
+      ]
+    },
+    {
+      "id": "impressao-etiquetas",
+      "section": "IMPRESSÃO",
+      "title": "Configurar impressoras, modelos e etiquetas",
+      "intro": "O módulo oferece prévias para documentos A4 e comprovantes térmicos. A logo cadastrada da empresa pode compor os modelos compatíveis.",
+      "steps": [
+        "Abra Configurações → Configurações Gerais → Impressão e confira as filas listadas pelo Windows.",
+        "Escolha papel, fila e modelo; os modelos térmicos incluem cinco opções: 80 mm Tipos 1, 2 e 3; 58 mm Tipos 1 e 2.",
+        "Para comprovantes, orçamentos, OS e relatórios em A4, abra Selecionar Modelo; confira a prévia e a opção de logo.",
+        "Em Estoque → Módulo Gerador de Etiquetas, selecione produtos, configure conteúdo/código, confira a prévia e imprima a calibração."
+      ],
+      "result": "A seleção do modelo atualiza a prévia. A janela de modelos permite comparar alternativas antes de aplicar.",
+      "attention": "A prévia ou a impressão de calibração abre o diálogo do navegador e não prova o resultado físico. Confira driver, papel, margens, escala e alinhamento; modelos térmicos são comprovantes não fiscais.",
+      "diagram": [
+        "Escolher fila e papel",
+        "Selecionar modelo",
+        "Conferir logo e prévia",
+        "Calibrar e imprimir"
+      ],
+      "terms": [
+        "impressão",
+        "impressora",
+        "modelos",
+        "a4",
+        "térmica",
+        "58mm",
+        "80mm",
+        "logo",
+        "etiqueta",
+        "calibração",
+        "prévia"
+      ],
+      "screenshot": "assets/screenshots/printing.png",
+      "screenshotCaption": "Captura real das configurações de impressão e dos modelos de impressora.",
+      "screenshotAlt": "Tela de Impressão com as colunas de impressoras comuns, recibos e impressora térmica."
+    },
+    {
+      "id": "usuarios-seguranca",
+      "section": "USUÁRIOS E SEGURANÇA",
+      "title": "Gerenciar contas, permissões e sessões",
+      "intro": "Contas individuais permitem controlar acessos e entender quem realizou as ações registradas.",
+      "steps": [
+        "Em Usuários → Cadastro de Usuários, crie uma conta individual e escolha o perfil adequado.",
+        "Use Perfil do Usuário e as permissões do terminal para limitar operações conforme a função.",
+        "Oriente cada pessoa a manter a senha privada e use Alterar Senha ou Trocar de Usuário quando necessário.",
+        "Administradores podem consultar Usuários Logados, Logs do Sistema e Histórico de Ações."
+      ],
+      "result": "O indicador inferior mostra contas com atividade recente; a lista detalha sessões e dispositivos para administradores.",
+      "attention": "Não compartilhe contas administrativas. Encerre sessões somente depois de conferir conta e dispositivo. Ative MFA para as contas administrativas antes de habilitar acesso externo.",
+      "diagram": [
+        "Criar conta individual",
+        "Definir perfil",
+        "Entrar e operar",
+        "Revisar sessões e histórico"
+      ],
+      "terms": [
+        "usuários",
+        "contas",
+        "perfil",
+        "permissões",
+        "sessões",
+        "logados",
+        "logs",
+        "histórico",
+        "senha",
+        "mfa"
+      ]
+    },
+    {
+      "id": "rede-celular",
+      "section": "REDE E ACESSO MÓVEL",
+      "title": "Acessar o sistema em outro dispositivo",
+      "intro": "Configurações de Rede controla o modo de acesso, o endereço e a proteção da conexão. A opção local só atende este computador.",
+      "steps": [
+        "Abra Configurações → Configurações de Rede e escolha o modo compatível com a instalação.",
+        "Para acesso por celular, prepare HTTPS ou a VPN privada recomendada e confira o estado dos certificados.",
+        "Quando disponível, leia o QR Code para abrir o endereço HTTPS no celular.",
+        "Entre com uma conta autorizada e confirme MFA; teste o acesso de uma rede permitida."
+      ],
+      "result": "O QR Code deve ser formado pelo endereço HTTPS atual do terminal; ele leva à página de login, não concede acesso sozinho.",
+      "attention": "O acesso público permanece desligado por padrão. Ative senha forte e MFA nas contas administrativas antes de disponibilizar acesso externo. Se a pasta protegida de certificados não estiver preparada, siga a instalação administrativa fornecida para o terminal.",
+      "diagram": [
+        "Escolher modo",
+        "Preparar HTTPS ou VPN",
+        "Ler QR Code",
+        "Autenticar no celular"
+      ],
+      "terms": [
+        "rede",
+        "celular",
+        "acesso remoto",
+        "vpn",
+        "tailscale",
+        "https",
+        "certificado",
+        "qr code",
+        "qrcode",
+        "mfa"
+      ]
+    },
+    {
+      "id": "backups-recuperacao",
+      "section": "CÓPIA DE SEGURANÇA",
+      "title": "Criar backups, restaurar e mudar de computador",
+      "intro": "Backups protegem o banco e permitem recuperar ou transferir a operação. Guarde o arquivo e a senha em locais protegidos.",
+      "steps": [
+        "Abra Cópia de Segurança → Fazer Backup ou Backups e restauração e crie uma cópia criptografada.",
+        "Configure Backup Automático quando necessário e confira o horário e o status apresentados.",
+        "Antes de restaurar, verifique data, integridade e senha; crie outro backup do estado atual.",
+        "Para trocar de computador, siga Mudar de Computador e confirme cada etapa no terminal de origem e no destino."
+      ],
+      "result": "A área de recuperação mostra ações para aplicar um backup ou voltar ao estado anterior quando uma restauração foi interrompida.",
+      "attention": "Restaurar substitui o estado atual pelo conteúdo escolhido. Não feche o programa durante a restauração. Se surgir Recuperação necessária, abra Backups e restauração e siga a ação de recuperação indicada; peça apoio se o estado não estiver claro.",
+      "diagram": [
+        "Criar cópia",
+        "Verificar e guardar",
+        "Escolher recuperação",
+        "Validar banco"
+      ],
+      "terms": [
+        "backup",
+        "restaurar",
+        "restauração",
+        "recuperação",
+        "interrompida",
+        "mudar computador",
+        "automático",
+        "senha backup"
+      ]
+    },
+    {
+      "id": "configuracoes-terminal",
+      "section": "CONFIGURAÇÕES",
+      "title": "Personalizar o terminal, o PDV e as telas",
+      "intro": "As configurações ajustam aparência, comportamento do PDV, terminal de preços, imagens e mensagens rotativas.",
+      "steps": [
+        "Em Configurações Gerais, revise dados da empresa, identidade visual, impressões e preferências do terminal.",
+        "Em Configurações P.D.V, ajuste o comportamento e os conteúdos usados durante a venda.",
+        "Em Terminal de Preços, configure o tempo e as fotos; em Fotos do P.D.V, organize imagens de espera e mensagens configuráveis.",
+        "Salve, retorne ao terminal ou PDV e confira o resultado na tela que utiliza a configuração."
+      ],
+      "result": "As preferências de impressão são compartilhadas neste computador; configurações de rede e algumas opções dependem do perfil administrador.",
+      "attention": "Teste imagens em uma resolução adequada e confirme legibilidade e proporção na tela de destino. Uma alteração salva pode exigir atualizar a tela do PDV ou do terminal para aparecer.",
+      "diagram": [
+        "Abrir a configuração",
+        "Ajustar conteúdo",
+        "Salvar",
+        "Conferir no terminal"
+      ],
+      "terms": [
+        "configurações",
+        "gerais",
+        "pdv",
+        "terminal de preços",
+        "fotos",
+        "mensagens",
+        "tema",
+        "aparência",
+        "logo"
+      ]
+    },
+    {
+      "id": "ajuda-registro",
+      "section": "AJUDA E LICENÇA",
+      "title": "Consultar a Ajuda, os termos e o registro",
+      "intro": "Use Ajuda para conhecer a versão e consultar orientações. O Registro do Sistema reúne informações e ativação da licença.",
+      "steps": [
+        "Abra Ajuda → Guia de Uso para pesquisar por módulo ou palavra-chave.",
+        "Consulte Sobre para identificar o produto e Termos e Condições de Uso para abrir as informações disponíveis.",
+        "Em Registro do Sistema, confira informações da licença e o estado deste terminal.",
+        "Se a licença precisar de ativação, siga o fluxo oficial do emissor e preserve os dados locais."
+      ],
+      "result": "A versão PDF deste guia também pode ser baixada pela Central de Ajuda.",
+      "attention": "O guia não substitui o contrato comercial fornecido com a licença. Não compartilhe códigos de ativação, senhas ou arquivos de certificado em canais públicos.",
+      "diagram": [
+        "Buscar na Ajuda",
+        "Ler Sobre e termos",
+        "Conferir licença",
+        "Ativar pelo emissor"
+      ],
+      "terms": [
+        "ajuda",
+        "guia",
+        "sobre",
+        "termos",
+        "licença",
+        "registro",
+        "ativação",
+        "emissor"
+      ],
+      "screenshot": "assets/screenshots/help-menu.png",
+      "screenshotCaption": "Captura real do menu Ajuda com os atalhos Sobre e Termos e Condições de Uso.",
+      "screenshotAlt": "Menu Ajuda do Cloud Project PDV aberto com as opções Sobre e Termos e Condições de Uso."
+    },
+    {
+      "id": "editor-sql",
+      "section": "UTILITÁRIOS · STATUS",
+      "title": "Editor SQL",
+      "status": "EM IMPLANTAÇÃO",
+      "intro": "Este módulo ainda está em implantação e não deve ser tratado como ferramenta disponível para operação.",
+      "steps": [
+        "Não execute comandos SQL por esse módulo enquanto ele estiver identificado como Em implantação.",
+        "Para corrigir dados, use os módulos próprios do sistema ou abra um atendimento com o suporte.",
+        "Antes de qualquer manutenção assistida, confirme um backup íntegro e descreva o problema observado.",
+        "Consulte esta seção novamente quando a implantação e a documentação oficial do módulo forem concluídas."
+      ],
+      "result": "O guia deixa explícito que o Editor SQL está em implantação e não documenta execução de consultas.",
+      "attention": "Alterações manuais no banco podem danificar dados, licença, histórico e integridade. Não edite o banco diretamente.",
+      "diagram": [
+        "Em implantação",
+        "Uso não liberado",
+        "Solicitar suporte",
+        "Aguardar documentação"
+      ],
+      "terms": [
+        "sql",
+        "editor sql",
+        "consulta",
+        "banco",
+        "em implantação"
+      ]
+    }
+  ]
+}
